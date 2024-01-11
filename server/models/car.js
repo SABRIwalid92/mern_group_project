@@ -42,7 +42,7 @@ const CarSchema = new mongoose.Schema({
         type: Number,
         trim: true,
         required: [true, "{PATH} is required"],
-        min:[1,"{VALUE} is less than 1 hpS"]
+        min:[1,"{VALUE} is less than 1 hp"]
 
     },
     maxSpeed: {
