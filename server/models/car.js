@@ -36,7 +36,7 @@ const CarSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: [true, "{PATH} is required"],
-        enum: [["Ordinary","Rare","Jewel"],"{PATH} is invalid!"]
+        enum: {values:["Ordinary","Rare","Jewel"],message:"{PATH} is invalid!"}
     },
     hp: {
         type: Number,
